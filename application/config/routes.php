@@ -37,6 +37,7 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+$route['news/create'] = 'news/create'; //CI sees 'create' as a method instead of a news item's slug
 $route['news/(:any)'] = 'news/view/$1'; //Routes URI's with slug to view method in news controller, $1 is the slug defined in :any
 $route['news'] = 'news'; //Routes to the news controller's index method
 $route['(:any)'] = 'pages/view/$1';
